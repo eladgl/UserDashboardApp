@@ -1,0 +1,52 @@
+{
+  "users": {
+    "overTime": {
+      "date": {
+        "type": "recentDate",
+        "value": {
+          "days": "90",
+          "dateMask": "x"
+        }
+      },
+      "amount": {
+        "type": "numberMax",
+        "value": {
+          "max": "30"
+        }
+      }
+    },
+    "user": {
+      "name": {
+        "type": "fullName"
+      },
+      "email": {
+        "type": "email"
+      },
+      "avatar": {
+        "type": "avatar"
+      },
+      "contribute": {
+        "type": "category",
+        "value": {
+          "categoryPath": "users.overTime",
+          "amount": "10"
+        },
+        "size": "20",
+        "randomSize": true
+      },
+      "ownership": {
+        "type": "fromArray",
+        "value": {
+          "dataSet": [
+            "owner",
+            "admin",
+            "member"
+          ]
+        }
+      },
+      "id": {
+        "type": "id"
+      }
+    }
+  }
+}
